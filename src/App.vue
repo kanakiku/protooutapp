@@ -15,8 +15,8 @@ export default {
   components: {
     HelloWorld
   }
+//コードはここに書く？
 
-  
 }
 </script>
 
