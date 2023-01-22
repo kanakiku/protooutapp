@@ -5,6 +5,11 @@
       <div class="relative">
         <img id="gazo" src="https://drive.google.com/uc?export=view&id=1K2j0JCF9CppLWob6YvZYvJR-ROm0NEIJ" width="540" height="960">
         <img id = "beans1" class="beans1" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
+        <img id = "beans2" class="beans2" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
+        <img id = "beans3" class="beans3" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
+        <img id = "beans4" class="beans4" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
+        <img id = "beans5" class="beans5" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
+        <img id = "beans6" class="beans6" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
       </div>
 </template>
 
@@ -42,7 +47,32 @@ a {
 }
 .beans1 {
     position: absolute;
+    top: 170px;
+    left: 170px;
+}
+.beans2 {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+.beans3 {
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+.beans4 {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+}
+.beans5 {
+    position: absolute;
     top: 150px;
+    left: 400px;
+}
+.beans6 {
+    position: absolute;
+    top: 400px;
     left: 150px;
 }
 </style>
