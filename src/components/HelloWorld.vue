@@ -10,16 +10,59 @@
         <img id = "beans4" class="beans4" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
         <img id = "beans5" class="beans5" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
         <img id = "beans6" class="beans6" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
+        <img id = "beans7" class="beans7" src="https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no" >
+
       </div>
+      <br>
+      <!--ループサンプル
+      <div v-for="fruit in fruits" :key="fruit">
+        {{ fruit }}
+      </div>
+      -->
+      <li v-for="image in images" :key="image.index">
+      <img :src="image.src" alt="">
+    </li>
+
+
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
   },
-
+  /*
+  data: () => {
+    return {
+      fruits: ["みかん", "りんご", "メロン", "いちご", "ぶどう"],
+    }
+  },
+  */
+  data() {
+  return {
+      images: [
+        { index: 1,
+          src: "https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no"
+        },
+        { index: 2,
+          src: "https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no"
+        },
+        { index: 3,
+          src: "https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no"
+        },
+        { index: 4,
+          src: "https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no"
+        },
+        { index: 5,
+          src: "https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no",
+        },
+        { index: 6,
+          src: "https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no"
+        },
+      ]
+    }
+  }
 }
 </script>
 
@@ -74,5 +117,10 @@ a {
     position: absolute;
     top: 400px;
     left: 150px;
+}
+.beans7 {
+    position: absolute;
+    top: 500px;
+    left: 450px;
 }
 </style>
