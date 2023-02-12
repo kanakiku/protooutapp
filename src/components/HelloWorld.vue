@@ -21,8 +21,10 @@
       -->
       <li v-for="image in images" :key="image.index">
       <img :src="image.src" alt="">
-    </li>
-
+      </li>
+      <br>
+      
+      <image v-for="n in 5" :key="n">{{ "image2.src" }}</image>
 
 </template>
 
@@ -60,9 +62,16 @@ export default {
         { index: 6,
           src: "https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no"
         },
+      ],
+      images2: [
+        { 
+          index:1,
+          image: "https://drive.google.com/uc?export=view&id=1IR24pMQ6-A1cgiSEhIIR7p5TwPnqr5no"
+        },
       ]
     }
   }
+
 }
 </script>
 
